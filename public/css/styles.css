@@ -1,0 +1,106 @@
+.calendar {
+    display: grid;
+    grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+}
+
+.calendar div {
+    display: block;
+    height: 12vh;
+    border: solid gray 1px;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.calendarInner {
+    display: block;
+    height: auto;
+}
+
+.calendarAct {
+    display: block;
+    font-size: 13px;
+    background: #284460;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.calendar div:hover {
+    color: #325d88;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.infoCalendar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.calendarModal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.calendarModal div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+/*//*Actividades*/
+
+.activity {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+
+/*//*Chat*/
+
+.chat {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.chatDiv {
+    height: 90vh;
+    border: solid black 1px;
+    padding: 30px;
+}
+
+.chatUsers a:hover {
+    color: blue;
+}
+
+.contentChat {
+    height: 70vh;
+}
+
+.chatMessage {
+    display: flex;
+}
+
+.contentChat {
+    padding: 15px;
+}
+
+.loader {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
